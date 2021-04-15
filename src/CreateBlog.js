@@ -49,7 +49,7 @@ const CreateBlog = () => {
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button onClick={handleSubmit}>Add Blog</button>
+        <button>Add Blog</button>
       </form>
     </div>
   );

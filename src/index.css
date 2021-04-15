@@ -30,11 +30,12 @@ html {
 }
 
 body {
-  max-width: 1200px;
+  max-width: 800px;
   font-size: 2rem;
   background-color: rgb(235, 236, 238);
   color: var(--black);
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 a {
@@ -115,8 +116,9 @@ nav {
 .blog-preview,
 .blog-details,
 .create-blog,
-.not-found {
-  width: clamp(30ch, 90%, 60ch);
+.not-found,
+.home {
+  width: clamp(30ch, 90%, 50ch);
   padding: 2rem;
   margin: 1rem;
 }
