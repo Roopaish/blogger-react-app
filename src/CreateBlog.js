@@ -17,7 +17,7 @@ const CreateBlog = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog),
     }).then(() => {
-      history.push("/");
+      history.push("/blogger-react-app/");
     });
   };
 

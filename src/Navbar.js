@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav>
-      <NavLink exact to="/">
+      <NavLink exact to="/blogger-react-app/">
         <h1 className="title">Blogger</h1>
       </NavLink>
       <div className="nav-links">
         <NavLink
           exact
-          to="/"
+          to="/blogger-react-app/"
           activeStyle={{ color: "whitesmoke" }}
           activeClassName="active"
           className="nav-link"
@@ -18,7 +18,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           exact
-          to="/newblog"
+          to="/blogger-react-app/newblog"
           activeClassName="active"
           activeStyle={{ color: "whitesmoke" }}
           className="nav-link"

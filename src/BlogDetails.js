@@ -12,7 +12,7 @@ const BlogDetails = () => {
     fetch("https://blogger-rolify-api.herokuapp.com/blogs/" + blogs.id, {
       method: "DELETE",
     }).then(() => {
-      history.push("/"); //push to home
+      history.push("/blogger-react-app/"); //push to home
     });
   };
 
