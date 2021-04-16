@@ -21,7 +21,7 @@ function App() {
             <Route exact path="/blogger-react-app/blogs/:id">
               <BlogDetails />
             </Route>
-            <Route path="*">
+            <Route path="/blogger-react-app/*">
               <NotFound />
             </Route>
           </Switch>

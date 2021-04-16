@@ -26,7 +26,19 @@ code {
 }
 
 html {
-  font-size: 10px;
+  font-size: 9px;
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  html {
+    font-size: 6px;
+  }
 }
 
 body {
@@ -36,6 +48,7 @@ body {
   color: var(--black);
   margin: 0 auto;
   padding: 0 1rem;
+  overflow-x: hidden;
 }
 
 a {
@@ -70,6 +83,9 @@ nav {
   align-items: center;
   box-shadow: 0 6px 3px -5px var(--shadow);
   margin-bottom: 2rem;
+  position: fixed;
+  width: clamp(0px, 100%, 800px);
+  background-color: rgb(235, 236, 238);
 }
 
 .title {
@@ -130,7 +146,10 @@ nav {
   width: 100%;
   z-index: -2;
 }
-/* Home section  */
+/* content */
+.content {
+  padding-top: 8rem;
+}
 /* Bloglist and BlogDetails  */
 
 .blog-preview,
@@ -138,9 +157,13 @@ nav {
 .create-blog,
 .not-found,
 .home {
-  width: clamp(30ch, 90%, 50ch);
+  width: clamp(90%, 90%, 50ch);
+  margin: 0 5%;
   padding: 2rem;
-  margin: 1rem;
+}
+
+.create-blog {
+  width: clamp(40ch, 90%, 50ch);
 }
 
 .blog-preview {
